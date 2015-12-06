@@ -1,0 +1,48 @@
+body {
+  text-align: center; 
+  background-color: #d9d9d9; 
+}
+
+h1 {
+  color: #cc0000; 
+  font-variant: small-caps;
+  font-size: 70px;
+  font-family: helvetica;
+  margin: 0;
+}
+
+.blurb {
+  font-family: "Courier New";
+  text-decoration: none; 
+}
+
+.instructions {
+  padding-left: 15px; 
+  padding-right: 15px; 
+}
+
+#appendable {
+  font-family: Helvetica;
+  background-color: #e6e6e6; 
+	border-style: solid;
+  border-width: 1px; 
+	border-color: gray;
+  padding-bottom: 12px; 
+  margin-left: 24px; 
+  margin-right: 24px;
+}
+
+button {
+  background: #3366cc; 
+  border-radius: 5px;
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 18px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+}
+button:hover {
+  background: #ffaa80;
+  background-image: linear-gradient(to bottom, #ffaa80, #ff7633);
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>KeyBuilder</title>
+		<link rel="stylesheet" type="text/css" href="style.css"></link> 
+		<script type="text/javascript" src="script.js"></script> 
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    	<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script> 
+	</head>
+	<body>
+		<div>
+			<h1>KeyBuilder</h1>
+			<P class="blurb">Writing an answer key for a test? KeyBuilder can help!</P>
+		</div> 
+		<div id="appendable"> 
+			<p class="instructions">KeyBuilder makes randomized answer keys for multiple choice and vocabulary tests.<br><br>Click "Multiple Choice" or "Vocabulary Test" to get started!</p> 
+			<button onClick="multipleChoice();";>Multiple Choice</button> 
+			<button onClick="vocabularyTest();">Vocabulary Test</button>  
+			<form id="content"></form> 
+		</div> 
+		<p class="blurb">Copyright 2015 by Sam Richards.</p> 
+	</body>
+</html>
