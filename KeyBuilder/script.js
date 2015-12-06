@@ -15,7 +15,7 @@ function multipleChoice() {
  	form.addEventListener("submit", function(event) {
  		var questions = form.elements.questions.value; 
  		var choices = form.elements.choices.value; 
- 		if (questions <= 0 || questions > 50) {
+ 		if (questions < 1 || questions > 50) {
  			alert("The number of questions must be between 1 and 50.");
  		} else if (choices < 3 || choices > 7) {
  			alert("The number of choices must be between 3 and 7.");
