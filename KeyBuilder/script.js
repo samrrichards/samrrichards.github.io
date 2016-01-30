@@ -73,9 +73,9 @@ function makeChoice(){
 			choice === rawChoices[rawChoices.length -2] &&
 			choice === rawChoices[rawChoices.length -3])
 				return makeChoice(); 
-	} else [
+	} else {
 		return choice; 
-	]
+	}
 }
 
 //This function generates a randomized multiple choice test key. 
