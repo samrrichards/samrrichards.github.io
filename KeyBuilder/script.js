@@ -64,13 +64,30 @@ function pageReset() {
 	$('#appendable').append('<button onClick="vocabularyTest();";>Vocabulary Test</button>'); 
 }
 
+//This function ensures that answers aren't repeated too frequently in a multiple choice test.
+
+function makeChoice(){
+	var choice = choiceLetters[Math.floor(Math.random() * choices)];
+	if (rawChoices.length > 3) {
+		if (choice === rawChoices[rawChoices.length -1] && 
+			choice === rawChoices[rawChoices.length -2] &&
+			choice === rawChoices[rawChoices.length -3])
+				return makeChoice(); 
+	} else [
+		return choice; 
+	]
+}
+
 //This function generates a randomized multiple choice test key. 
 
 function makeMCKey(questions, choices) {
 	var choiceLetters = ["A", "B", "C", "D", "E", "F", "G"];
 	var choiceString = ""; 
+	var rawChoices = []; 
 	for (var i = 1; i <= questions; i++) 
-		choiceString += String(i) + ". " + choiceLetters[Math.floor(Math.random() * choices)] + "<br>";
+		var choice = makeChoice();
+		rawChoices.push(choice); 
+		choiceString += String(i) + ". " + choice + "<br>";
 	return choiceString; 
 }
 
